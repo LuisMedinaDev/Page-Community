@@ -1,0 +1,20 @@
+---
+import BotonIngresa from './boton-ingresa.astro';
+const { name, imgSrc, descripcion} = Astro.props
+---
+<div class="flex flex-col gap-7 items-center justify-center py-10 px-5 min-w-[25rem] rounded-[2rem]  border drop-shadow-[0_0_40px_#4e08ff88] w-auto ">
+    <img src={imgSrc} alt="" class="h-[20rem] w-[20rem] md:w-60 md:h-60 rounded-3xl" loading="lazy"/>
+    <div class="flex flex-col gap-2 text-center">
+        <span class="text-3xl font-bold">{name}</span>
+        <span class="text-2xl">{descripcion}</span>
+    </div>
+    <div>
+        <BotonIngresa title="GitHub"/>
+    </div>
+</div>
+
+<style>
+    h5 {
+        color: #553eda28;
+    }
+</style>

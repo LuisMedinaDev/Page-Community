@@ -1,0 +1,15 @@
+---
+import BotonIngresa from './boton-ingresa.astro';
+const { name, imgSrc, descripcion} = Astro.props
+---
+<div class="flex flex-col gap-10 h-auto items-center text-center md:flex-row md:text-left md:min-w-[50%] ">
+<img src={imgSrc} class="h-[20rem] w-[20rem] md:w-60 md:h-60 rounded-full transition hover:duration-200 active:scale-105 hover:shadow-[0_0_15px_1px_#3908ffa9] cursor-pointer" loading="lazy"/>
+
+<div class="flex flex-col gap-7">
+  <h2 class="text-5xl font-bold m-0 p-0">{name}</h2>
+  <p class="text-2xl m-0 p-0">{descripcion}</p>
+  <div>
+    <BotonIngresa title="Ingresa al grupo"/>
+  </div>
+</div>
+</div>

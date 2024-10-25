@@ -1,0 +1,48 @@
+---
+import HeaderLink from "../global/header-link.astro";
+---
+
+<header
+  class="z-[9999] py-8 flex fixed top-0 w-screen backdrop-blur-[10rem]
+ text-color-primario shadow-[0_0_20px_10px_#6400c22] text-[1.3rem]
+md:py-8"
+>
+  <nav class="m-auto w-9/12 flex justify-between">
+    <a href="https://communitypage.netlify.app/" class="decoration-none">
+        <h1 class="font-extrabold text-color-primario text-2xl">
+            &lt;/『Programadores』💻⚙️&gt;
+          </h1></a>
+    
+    <label for="menu">
+      <img src="images/menu.svg" alt="" class="h-10 md:hidden"/>
+    </label>
+    <input type="checkbox" id="menu" class="hidden" />
+
+    <ul
+      class="z-[9999] flex flex-col gap-16 items-center bg-black fixed top-[6rem] left-0 w-screen py-12 duration-300 custom-close
+        md:flex-row md:top-0 md:w-auto md:py-0 md:relative md:bg-transparent h-auto"
+    >
+      <HeaderLink title="Inicio" link="#Inicio" />
+      <HeaderLink title="Sobre nosotros" link="#Nosotros" />
+      <HeaderLink title="Comunidad" link="#Comunidad" />
+      <HeaderLink title="Admins" link="#Admins" />
+      
+    </ul>
+  </nav>
+</header>
+<style>
+  .custom-close {
+    @apply transition-all duration-500 ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  #menu:checked ~ .custom-close {
+    @apply transition-all duration-500 ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  @media (width >= 768px) {
+    .custom-close {
+      @apply transition-all duration-500 ease-in-out;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+</style>

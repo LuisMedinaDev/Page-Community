@@ -1,0 +1,10 @@
+---
+import BotonIngresa from './boton-ingresa.astro';
+const { botonTitle, text } = Astro.props
+---
+<div class="md:max-w-[80%] m-auto flex flex-col gap-9 justify-center items-center border-[.5px] border-slate-300 rounded-[2rem] p-10 mb-10 ">
+    <span class="text-3xl font-bold inline-block text-center ">{ text }</span>
+    <div>
+        <BotonIngresa title={ botonTitle }></BotonIngresa>
+    </div>
+</div>
