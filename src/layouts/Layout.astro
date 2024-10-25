@@ -21,14 +21,22 @@ import Hero from '../components/global/hero.astro';
 		<title>{ title }</title>
 	</head>
 		<body>
-        <Hero/>
+            <Hero/>
+            <div>
+                <div class="fixed top-0 h-screen w-screen z-[-3]">
+                    <img src="images/hero-p.webp" alt="" class="object-cover h-full w-full " loading="eager">
+                </div>
+            </div>
+        <div class="luis fixed top-0 h-screen w-screen z-[-2]">
 
+        </div>
 		<Header/>
 		<main class="w-9/12 m-auto">
 			<slot />
 		</main>
 		<Footer/>
 	</body>
+   
 </html>
 
 <style is:global>
@@ -37,7 +45,11 @@ import Hero from '../components/global/hero.astro';
 	scroll-behavior: smooth;
     }
     body {
-        background: linear-gradient(#000115, #020d24fc,#00020b) ;
+        background: linear-gradient(#000115, #020624fc,#000208);
+
+    }
+    .luis {
+        background: linear-gradient(#000115, #020624fc,#000208);
     }
 
 @media (max-width: 2048px) and (min-width: 1990px) {
