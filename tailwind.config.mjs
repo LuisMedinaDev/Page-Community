@@ -13,7 +13,7 @@ export default {
 				
 			  },
 			  dropShadow: {
-				'custom': '0 0 20px #4e08ffc0', 
+				'custom': '0 0 15px #4e08ffc0', 
 				'custom2': '0 0 20px #bd08ffc0',
 			  },
 			  
