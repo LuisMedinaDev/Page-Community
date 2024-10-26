@@ -1,4 +1,4 @@
-# Bienvenidos a nuestra comunidad
+# Página oficial de nuestra comunidad de programación
 
 Somos una comunidad apasionada por la programación, el desarrollo de software y la tecnología. Nuestro objetivo principal es conectar a desarrolladores de todo el mundo para compartir conocimientos, colaborar en proyectos y aprender juntos en un entorno de apoyo y respeto mutuo.
 
