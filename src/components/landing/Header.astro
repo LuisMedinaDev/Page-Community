@@ -19,7 +19,7 @@ md:py-8"
     <input type="checkbox" id="menu" class="hidden" />
 
     <ul
-      class="z-[9999] flex flex-col gap-16 items-center bg-black fixed top-[6rem] left-0 w-screen py-12 duration-300 custom-close
+      class="z-[9999] flex flex-col gap-16 items-center bg-black fixed top-[6.3rem] left-0 w-screen py-16 duration-300 custom-close
         md:flex-row md:top-0 md:w-auto md:py-0 md:relative md:bg-transparent h-auto"
     >
       <HeaderLink title="Inicio" link="#Inicio" />
@@ -32,16 +32,16 @@ md:py-8"
 </header>
 <style>
   .custom-close {
-    @apply transition-all duration-500 ease-in-out;
+    @apply transition-all duration-300;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   #menu:checked ~ .custom-close {
-    @apply transition-all duration-500 ease-in-out;
+    @apply transition-all duration-300;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   @media (width >= 768px) {
     .custom-close {
-      @apply transition-all duration-500 ease-in-out;
+      @apply transition-all duration-300 ease-in-out;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
