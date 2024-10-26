@@ -1,54 +1,33 @@
-# Astro Starter Kit: Basics
+# Página oficial de nuestra comunidad de programación
 
-```sh
-npm create astro@latest -- --template basics
-```
+Somos una comunidad apasionada por la programación, el desarrollo de software y la tecnología. Nuestro objetivo principal es conectar a desarrolladores de todo el mundo para compartir conocimientos, colaborar en proyectos y aprender juntos en un entorno de apoyo y respeto mutuo.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## ¿Qué ofrecemos?
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+En nuestra, encontrarás recursos útiles para tu crecimiento como programador:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Discusiones**: Únete a debates sobre temas de programación, frameworks, lenguajes de programación y mejores prácticas.
+- **Proyectos colaborativos**: Participa en proyectos open-source junto a otros miembros de la comunidad.
+- **Tutoriales y cursos**: Accede a una gran cantidad de material educativo gratuito que cubre desde lo básico hasta temas avanzados.
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## ¿Quiénes pueden unirse?
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Cualquier persona interesada en la programación, ya sea principiante, estudiante o profesional, es bienvenida. Nuestra comunidad está diseñada para incluir a personas de todos los niveles de habilidad y experiencia.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## ¿Cómo puedes contribuir?
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Compartir tu conocimiento**: Publica artículos, tutoriales o guías que puedan ayudar a otros programadores.
+- **Unirte a proyectos**: Ayuda en la construcción de herramientas o aplicaciones colaborativas.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## ¿Por qué unirse a nuestra comunidad?
 
-## 🧞 Commands
+La programación no es solo escribir código, también se trata de aprender y colaborar con otros. Aquí encontrarás un espacio donde puedes crecer profesionalmente, resolver dudas, conocer nuevas herramientas y hacer amistades con intereses afines.
 
-All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+¡Esperamos verte en nuestra próxima reunión o en los foros!
+
+
