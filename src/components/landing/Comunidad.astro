@@ -1,24 +1,59 @@
 ---
 import ComunidadInfo from "../global/comunidad-info.astro";
 import Grupos from "../global/Grupos.astro";
+
+const GRUPOS = [
+  {
+    name: "Grupo principal",
+    imgSrc: "images/img-comunidad.webp",
+    descripcion: "Grupo principal de la comunidad. Aquí compartimos conocimientos y experiencias. Nos apoyamos mutuamente para crecer profesionalmente y mejorar nuestras habilidades.",
+    link2: "https://chat.whatsapp.com/JWomUUk5eFN3zPl6l9GkGj"
+  },
+  {
+    name: "Grupo secundario",
+    imgSrc: "images/grupo-2.webp",
+    descripcion: "Alternativa al grupo principal.",
+    link2: "https://chat.whatsapp.com/HbbbHRMogIv5cHzFJz0mfg"
+  },
+  {
+    name: "Recursos",
+    imgSrc: "images/recursos.webp",
+    descripcion: "Grupo de recursos enfocado al desarrollo web, donde compartimos tutoriales, herramientas y soluciones prácticas.",
+    link2: "https://chat.whatsapp.com/DZXWU59CURb3bIlPf9EXhY"
+  }
+]
+
+const COMUNIDAD_INFO = [
+  {
+    botonTitle: "Link de la comunidad",
+    text: "Nuestra comunidad está formada por más de 25 grupos de programación.",
+    link2: "https://chat.whatsapp.com/IRR8f9RrpT7CCS2QuwooFe"
+  },
+  {
+    botonTitle: "Link del drive",
+    text: "Contamos con un Drive lleno de recursos para programadores.",
+    link2: "https://drive.google.com/drive/folders/1-EHY3NGYtn0iSycOUqgMs2jZt8HPKCKt?usp=sharing"
+  }
+]
 ---
 <section class="text-color-primario py-28" id="Comunidad">
   <h2 class="text-[4rem] font-bold mb-10 mt-5 text-center">Comunidad</h2>
   <div class="flex flex-col py-20 gap-28 justify-between
 md:flex-row">
-<article class="flex flex-col gap-32 md:gap-20">
-  <Grupos name="Grupo principal" imgSrc="images/img-comunidad.webp" descripcion="Grupo principal de la comunidad. Aquí compartimos conocimientos y experiencias. Nos apoyamos mutuamente para crecer profesionalmente y mejorar nuestras habilidades." link2="https://chat.whatsapp.com/JWomUUk5eFN3zPl6l9GkGj"/>
-  <Grupos name="Grupo secundario" imgSrc="images/grupo-2.webp" descripcion="Alternativa al grupo principal." link2="https://chat.whatsapp.com/HbbbHRMogIv5cHzFJz0mfg"/>
-  <Grupos name="Recursos" imgSrc="images/recursos.webp" descripcion="Grupo de recursos enfocado al desarrollo web, donde compartimos tutoriales, herramientas y soluciones prácticas." link2="https://chat.whatsapp.com/DZXWU59CURb3bIlPf9EXhY"/>
-</article>
-<article class="">
 
-  <div>
-    <ComunidadInfo botonTitle="Link de la comunidad" text="Nuestra comunidad está formada por más de 25 grupos de programación." link2="https://chat.whatsapp.com/IRR8f9RrpT7CCS2QuwooFe"/>
-  </div>
-  <div>
-    <ComunidadInfo botonTitle="Link del drive" text="Contamos con un Drive lleno de recursos para programadores." link2="https://drive.google.com/drive/folders/1-EHY3NGYtn0iSycOUqgMs2jZt8HPKCKt?usp=sharing"/>
-  </div>
+<article class="flex flex-col gap-32 md:gap-20">
+  {
+    GRUPOS.map(({name, imgSrc, descripcion, link2}) => (
+      <Grupos name={name} imgSrc={imgSrc} descripcion={descripcion} link2={link2}/>
+    ))
+  }
+</article>
+<article>
+  {
+    COMUNIDAD_INFO.map(({botonTitle, text, link2}) => (
+        <ComunidadInfo botonTitle={botonTitle} text={text} link2={link2}/>
+    ))
+  }
 </article>
   </div>
 </section>

@@ -5,12 +5,11 @@ const { name, imgSrc, descripcion, link2 } = Astro.props;
 ---
 <div class="flex flex-col gap-10 h-auto items-center text-center md:flex-row md:text-left md:min-w-[50%] ">
 <img src={imgSrc} class="h-[20rem] w-[20rem] md:w-60 md:h-60 rounded-full cursor-pointer" loading="lazy"/>
-
 <div class="flex flex-col gap-10">
   <h2 class="text-5xl font-bold m-0 p-0">{name}</h2>
   <p class="text-[1.7rem] m-0 p-0">{descripcion}</p>
   <div>
-    <BotonIngresa title="Ingresar al grupo"  link={link2} Imgsrc="images/flecha.webp"></BotonIngresa>
+    <BotonIngresa title="Ingresar al grupo" link={link2} Imgsrc="images/flecha.webp"></BotonIngresa>
   </div>
 </div>
 </div>
