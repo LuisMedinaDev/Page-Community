@@ -1,5 +1,5 @@
 {
-  "name": "page-community",
+  "name": "comunidad-pagina",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.2",
-    "astro": "^4.16.7",
+    "astro": "^4.16.10",
     "tailwindcss": "^3.4.14"
   }
 }
